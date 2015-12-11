@@ -4,7 +4,8 @@
   "description": "Simple test project to test Karma test suite on Travis CI",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/karma/bin/karma start karma.conf.js"
+    "test": "./node_modules/karma/bin/karma start karma.conf.js",
+    "codecov": "cat coverage/*/lcov.info | codecov"
   },
   "author": "Mathieu Savy <mathieu.savy@gmail.com>",
   "license": "MIT",
@@ -19,5 +20,8 @@
     "karma-verbose-reporter": "0.0.3",
     "mocha": "^2.3.4",
     "phantomjs": "^1.9.19"
+  },
+  "dependencies": {
+    "codecov.io": "^0.1.6"
   }
 }
