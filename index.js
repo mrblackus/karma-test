@@ -11,3 +11,7 @@ var g = 2;
 function uglyFunction(a) {
   return a + g;
 }
+
+var function buggyFunction () {
+  return missingVar + 'toto';
+}
