@@ -1,3 +1,5 @@
+console.log('Environment variable HOST:' + window.__env__.HOST);
+
 describe('Main file', function () {
   describe('plus function', function () {
 
