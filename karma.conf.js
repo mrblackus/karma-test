@@ -15,7 +15,7 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      'index.js',
+      'build/lib.js',
       'test.js'
     ],
 
@@ -28,11 +28,8 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-      '*.js': ['env', 'coverage']
+      '*.js': ['coverage']
     },
-
-    envPreprocessor: ['HOST'],
-
 
     // test results reporter to use
     // possible values: 'dots', 'progress'

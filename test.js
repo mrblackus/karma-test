@@ -1,25 +1,26 @@
-console.log('Environment variable HOST:' + window.__env__.HOST);
+var Operation = new KarmaTest.Operation();
+var Foo = new KarmaTest.Foo();
 
 describe('Main file', function () {
   describe('plus function', function () {
 
     it('should return an integer', function () {
-      expect(plus(1, 2)).to.be.a('number');
+      expect(Operation.plus(1, 2)).to.be.a('number');
     });
 
     it('should return a correct value', function () {
-      expect(plus(1, 2)).to.be.equal(3);
+      expect(Operation.plus(1, 2)).to.be.equal(3);
     });
   });
 
   describe('minus function', function () {
 
     it('should return an integer', function () {
-      expect(minus(1, 2)).to.be.a('number');
+      expect(Operation.minus(1, 2)).to.be.a('number');
     });
 
     it('should return a correct value', function () {
-      expect(minus(1, 2)).to.be.equal(-1);
+      expect(Operation.minus(1, 2)).to.be.equal(-1);
     });
   });
 });
