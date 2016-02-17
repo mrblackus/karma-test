@@ -13,7 +13,7 @@ var baseConfig = {
     library: 'KarmaTest',
     libraryTarget: 'umd'
   },
-  devtool: 'source-map',
+  devtool: 'inline-source-map',
   module: {
     loaders: [{
       test: /\.js$/,
