@@ -1,3 +1,5 @@
+import Bar from './bar';
+
 class Operation {
   plus(a, b) {
     return a + b;
@@ -11,10 +13,11 @@ class Operation {
 class Foo {
   constructor() {
     this.g = 2;
+    this.bar = new Bar(3);
   }
 
   uglyFunction(a) {
-    return a + g;
+    return a + g + this.bar.baz();
   }
 
   buggyFunction () {

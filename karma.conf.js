@@ -28,7 +28,7 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-      'build/**/*.js': ['sourcemap', 'coverage']
+      'build/**/*.js': ['coverage']
     },
 
     // test results reporter to use
@@ -37,7 +37,14 @@ module.exports = function(config) {
     reporters: ['verbose', 'progress', 'coverage'],
 
     coverageReporter: {
-      reporters: [{type: 'lcov'}]
+      reporters: [
+        {
+          type: 'lcov'
+        },
+        {
+          type: 'html'
+        }
+      ]
     },
 
 
