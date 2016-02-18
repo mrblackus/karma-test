@@ -14,23 +14,7 @@ var baseConfig = {
     libraryTarget: 'umd'
   },
   devtool: 'source-map',
-  isparta: {
-    embedSource: true,
-    noAutoWrap: true,
-    babel: {
-      presets: ['es2015']
-    }
-  },
   module: {
-    preLoaders:[
-      {
-        test: /\.js$/,
-        exclude: [
-          /node_modules/
-        ],
-        loader: 'isparta'
-      }
-    ],
     loaders: [{
       test: /\.js$/,
       exclude: [

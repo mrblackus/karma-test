@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "node ./node_modules/webpack/bin/webpack.js",
+    "build:karma": "node ./node_modules/webpack/bin/webpack.js --config webpack.karma.js",
     "karma": "./node_modules/karma/bin/karma start karma.conf.js",
-    "test": "npm run build && npm run karma",
+    "test": "npm run build:karma && npm run karma",
     "codecov": "cat coverage/*/lcov.info | codecov"
   },
   "author": "Mathieu Savy <mathieu.savy@gmail.com>",
